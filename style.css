@@ -1,0 +1,99 @@
+/* ===== Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    color: #f9faf8;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #3882f6;
+    border: 0;
+}
+
+/* ===== Layout Container ===== */
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f9faf8;
+    margin-bottom: 80px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    font-size: 16px;
+    color: #d0d0d0;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+    background-color: #1f2937;
+    padding: 18px 10px; /* top-bottom | left-right */
+}
+
+/* Hero content layout */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding-bottom: 60px;
+    flex-wrap: wrap; /* allows image and text to stack on smaller screens */
+}
+
+.hero-text {
+    width: 600px;
+    flex: 1; /* makes text flexible for smaller screens */
+}
+
+.hero-text h1 {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-text p {
+    color: #d0d0d0;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.hero-image {
+    flex-shrink: 0;
+    flex-grow: 1; /* image will take remaining space */
+    max-width: 300px; /* prevents image from growing too big */
+}
