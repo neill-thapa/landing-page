@@ -181,12 +181,13 @@ button {
 }
 
 .cta-box {
-    padding: 20px 160px;
+    padding: 40px;
     background-color: #3882f6;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     font-size: 16px;
     color: white;
