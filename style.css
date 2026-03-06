@@ -97,7 +97,7 @@ button {
 .hero-image {
     flex-shrink: 0;
     flex-grow: 1; /* image will take remaining space */
-    max-width: 450px; /* prevents image from growing too big */
+    max-width: 350px; /* prevents image from growing too big */
 }
 
 /* Info section*/
@@ -195,8 +195,10 @@ button {
 
 .cta-box button {
     display: flex;
+    justify-content: center;
     flex-shrink: 0;
     flex-wrap: wrap;
+    flex-grow: 1;
     border: 2px solid white;
 }
 
